@@ -1,0 +1,146 @@
+  /*  background-color: #121114; */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #121114; 
+}
+.container{
+    max-width: 700px; 
+    margin: 0 auto; /* Centralizando o conteúdo*/
+    background-color: #121114; 
+    
+}
+
+
+
+.boxTelaToda{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.box1{
+  display: flex;
+  
+}
+
+.box1 img{
+    width: 300px;
+    height: 80px;
+    margin: 40px;
+}
+
+
+.box2 h1{
+    color: white;
+    margin: 40px;
+}
+
+
+.box3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 30px;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 160px;
+    height: 180px;
+    background-color: #121114;
+    padding: 0;
+    opacity: 70%;
+    margin: 10px;
+    
+}
+
+.userName{
+    width: 160px;
+    height: 30px;
+    color: white;
+    background-color: #121114;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.imgUser{
+    border: 1px solid #121114;
+    width: 158px;
+    height: 142px;
+   
+}
+.cards .imgUser img {
+    width: 156px;
+    height: 140px; 
+    border: 1px solid #121114;
+    border-radius: 5px;
+}
+
+
+.cardPlus{
+    width: 158px;
+    height: 145px;  
+    background-color: #1c1b1f;
+    border: 1px solid #121114;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .imgPlus img{
+    width: 60px;
+    height: 60px;   
+}
+
+/*
+.teste0{
+    width: 60px;
+    height: 60px; 
+    background-color: aqua;
+}
+*/
+
+
+
+
+
+/* Estilos de HOVER*/
+
+.imgUser img:hover{
+    border: 1px solid white;
+}
+.cards:hover {
+    opacity: 100%;
+}
+.cardPlus:hover{
+    border: 1px solid white;
+    
+}
+
+/*  Estilo do botão Gerenciar perfil*/
+.box4 button{
+    background-color: #121114;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    width: 150px;
+    height: 40px;
+    margin: 40px;
+}
+
+.box4 button:hover{
+    background-color: white;
+    color: #121114;
+}
