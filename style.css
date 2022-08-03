@@ -1,146 +1,127 @@
-  /*  background-color: #121114; */
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: #121114; 
+    background-color: #121114; /* definindo a con de fundo de toda a pagina externa ao container*/
 }
 .container{
-    max-width: 700px; 
-    margin: 0 auto; /* Centralizando o conteúdo*/
-    background-color: #121114; 
+    max-width: 700px;  /* definindo a largura máxima do container*/
+    margin: 0 auto; /* Centralizando o conteúdo do container*/
+    background-color: #121114;  /* definindo a cor de fundo do container*/
     
 }
 
 
 
 .boxTelaToda{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
+    display: flex;  /* Utilizando FlexBox */
+    flex-direction: column; /* alinhando em colunas os 4 sub-boxes criados */
+    align-items: center; /* centralizando os 4 sub-boxes que se encontram na vertical*/
 }
 
 
-
-.box1{
-  display: flex;
-  
-}
-
-.box1 img{
-    width: 300px;
-    height: 80px;
-    margin: 40px;
+.sub-box1 img{ /* dimensionando a imagem kenzieFlix*/
+    width: 300px;  /*definindo a largura da imagem */
+    height: 80px; /* definindo a altura da imagem */
+    margin: 40px; /* criando uma separação entre os boxes*/
 }
 
 
-.box2 h1{
-    color: white;
-    margin: 40px;
+.sub-box2 h1{  /* estilizando o titulo h1 quem esta assistindo*/
+    color: white;  /* alterando a corda fonte para branco */
+    margin: 40px; /* criando uma separação entre os boxes*/
 }
 
 
-.box3{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 30px;
+.sub-box3{
+    display: flex; /* utilizando FlexBox*/
+    justify-content: space-between; /* Criando um espaçamento igual entre os cards de perfil */
+    flex-direction: row;   /* alinhando os cards de perfil em linha*/
+    margin: 30px; /* criando uma separação entre os boxes*/
 }
 
 
 .cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 160px;
-    height: 180px;
-    background-color: #121114;
+    display: flex; /* utilizando FlexBox*/
+    flex-direction: column; /* alinhando os elementos internos do card de perfil (imagem e texto) em coluna*/
+    justify-content: space-between;  /* criando um espaco igual entre os elementos internos do card de perfil (imagem e texto) */
+    width: 160px;  /* definindo a largura do card de perfil */
+    height: 180px; /* definindo a altura do card de perfil */
+    background-color: #121114; /* definindo a cor de fundo do card de perfil*/
     padding: 0;
-    opacity: 70%;
-    margin: 10px;
+    opacity: 70%; /* diminuindo a opacidade do card, para tornar possivel criar o efeito de acender via hover */
+    margin: 10px; /* criando um espaçamento maior do queo criado pelo justify-content entre os cards de perfil */
     
 }
 
-.userName{
-    width: 160px;
-    height: 30px;
-    color: white;
-    background-color: #121114;
-    text-align: center;
-    margin-top: 5px;
+.userName{  /* Estilizando o box interno userName dos Cards , o qual contem o nome do usuario*/
+    width: 160px;  /* definindo a largura do box interno */
+    height: 30px;  /* definindo a altura do box interno */
+    color: white; /* definindo a cor da fonte*/
+    background-color: #121114; /* definindo a con de fundo*/
+    text-align: center;  /* alinhando o texto ao centro do box interno */
+    margin-top: 5px; /* criando uma separação entre os box internos do card*/
 }
 
-.imgUser{
-    border: 1px solid #121114;
-    width: 158px;
-    height: 142px;
+.imgUser{ /* Estilizando o box interno imgUser dos Cards , o qual contem a imagem de perfil do usuario*/
+    width: 158px; /* definindo a largura do box interno */
+    height: 142px;  /* definindo a altura do box interno */
    
 }
-.cards .imgUser img {
-    width: 156px;
-    height: 140px; 
-    border: 1px solid #121114;
-    border-radius: 5px;
+.cards .imgUser img { /* Estilizando a imagem dos perfis no box interno imgUser dos Cards , o qual contem a imagem de perfil do usuario*/
+    width: 156px;  /* definindo a largura da imagem de perfil */
+    height: 140px;  /* definindo a altura da imagem de perfil */
+    border: 1px solid #121114;   /* criando uma borada solida na imagem, da mesma cor do fundo do card, apenas para 
+                                    melhroar o aspecto visual ao ser aplicado o efeito do hover sobre a borda*/
+    border-radius: 5px; /* criando um efeito de borda curvada na imagem */
 }
 
 
-.cardPlus{
-    width: 158px;
-    height: 140px;  
-    background-color: #1c1b1f;
-    border: 1px solid #121114;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.cardPlus{ /* Estilizando a imagem adicionar usuario, a qual precisa ser estilizada de forma separada as imagens de perfis*/
+    width: 158px;  /* definindo a largura do sub-box o qual precisa ser do mesmo tamanho das imagens de perfil, mesmo contendo uma imagem menor*/
+    height: 140px;   /* definindo a altura do sub-box*/
+    background-color: #1c1b1f; /* definindo a con de fundo*/
+    border: 1px solid #121114; /* criando uma borada solida na imagem, da mesma cor do fundo do card, apenas para 
+                                    melhroar o aspecto visual ao ser aplicado o efeito do hover sobre a borda*/
+    border-radius: 5px; /* criando um efeito de borda curvada na imagem */
+    display: flex;  /* utilizando Flex box para alinhar a imagem ao centro do card adicionar perfil */
+    justify-content: center; /* centralizando a imagem de forma horizontal*/
+    align-items: center; /* centralizando a imagem de forma vertical*/
 }
 
  .imgPlus img{
-    width: 60px;
-    height: 60px;   
+    width: 60px;   /* definindo a largura da imagem plus */
+    height: 60px;     /* definindo a altura da imagem plus */
 }
 
-/*
-.teste0{
-    width: 60px;
-    height: 60px; 
-    background-color: aqua;
-}
-*/
-
-
-
-
-
-/* Estilos de HOVER*/
+/* Estilos de HOVER dos cards de perfil*/
 
 .imgUser img:hover{
-    border: 1px solid white;
+    border: 1px solid white; /* criando uma borda solida branca sobre a imagem dos cads de perfil*/
 }
 .cards:hover {
-    opacity: 100%;
+    opacity: 100%; /* alternado a opacitadade do card como um todo para da um efeito de luz no card, efeito vale para os cards de perfil e adicionar perfil*/
 }
 .cardPlus:hover{
-    border: 1px solid white;
+    border: 1px solid white; /* criando uma borda solida branca no card de adicionar perfil*/
     
 }
 
-/*  Estilo do botão Gerenciar perfil*/
-.box4 button{
-    background-color: #121114;
-    border: 2px solid white;
-    color: white;
+/*  Estilzando o button Gerenciar perfil*/
+.sub-box4 button{
+    background-color: #121114;  /* alterando a cor de fundo padrão do button*/
+    border: 2px solid white; /* criando uma borda sólida branca de espessura 2px */
+    color: white; /* definindo a cor da fonte como white*/
     padding: 10px;
-    border-radius: 4px;
-    width: 150px;
-    height: 40px;
-    margin: 40px;
+    border-radius: 4px; /* criando uma leve curvatura na borda do button*/
+    width: 150px; /*definindo a largura do button */
+    height: 40px; /* difininfo a altura do button*/
+    margin: 40px; /* criando uma separação entre o sub-box3 e o sub-box4*/
 }
 
-.box4 button:hover{
-    background-color: white;
-    color: #121114;
+.sub-box4 button:hover{   /* criando efeito de hove no button*/
+    background-color: white; /* mudando a cor de fundo para branco*/
+    color: #121114; /*mudando a cor da fonte para preto */
 }
